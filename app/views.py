@@ -1,3 +1,11 @@
-from django.shortcuts import render
+# from django.shortcuts import render
+from django.views.generic import TemplateView
 
-# Create your views here.
+# TemplateViewを使用して、固定ページにします => テンプレート名は、app/index.htmlです。
+class IndexView(TemplateView):
+  template_name = "app/index.html"
+
+
+
+
+
