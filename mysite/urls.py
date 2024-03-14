@@ -18,7 +18,9 @@ from django.contrib import admin
 from django.urls import path, include
 
 # プロジェクトURLにappアプリケーションを指定
+# プロジェクトURLにaccountsアプリケーションを指定します。
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('app.urls')),
+    path('accounts/', include('accounts.urls')),
 ]
